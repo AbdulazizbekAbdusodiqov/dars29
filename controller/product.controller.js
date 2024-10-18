@@ -6,6 +6,7 @@ export const getAllProducts = (req, res, next) => {
         const products = readProductsJson()
 
         return res.status(200).send(products)
+        
     }catch(err){
         next(err)
     }
